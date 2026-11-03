@@ -1,244 +1,297 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Sonali Subash | Data Analyst Portfolio</title>
-  <meta name="description" content="Sonali Subash is a Data Analyst with 4+ years of experience in SQL, Python, Power BI, Tableau and Excel, turning business data into clear insights.">
-  <!-- Free icon library (Font Awesome via cdnjs) -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>playport - Play Windows Games on Your iPhone</title>
+<meta name="description" content="playport runs Windows games, 64-bit and now 32-bit, on a stock, non-jailbroken iPhone. Install a game from your library, pick up a controller and press Play. No PC, no cloud, no stream.">
+<meta name="keywords" content="playport, Windows games on iPhone, play PC games on iPhone, iOS game runner, 32-bit games iPhone, 64-bit games iPhone, controller support iPhone, non-jailbroken iPhone games, on-device gaming">
+<meta name="author" content="playport">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://github.com/MazenZya/playport">
+<meta property="og:type" content="website">
+<meta property="og:title" content="playport - Play Windows Games on Your iPhone">
+<meta property="og:description" content="Run Windows games, 64-bit and 32-bit, on a stock, non-jailbroken iPhone. Install a game, pick up a controller and press Play. No PC, no cloud, no stream.">
+<meta property="og:url" content="https://github.com/MazenZya/playport/releases">
+<meta property="og:site_name" content="playport">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="playport - Play Windows Games on Your iPhone">
+<meta name="twitter:description" content="Run Windows games on a stock, non-jailbroken iPhone using the phone's own CPU and GPU. No PC, no cloud, no stream.">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "playport",
+  "operatingSystem": "iOS",
+  "applicationCategory": "GameApplication",
+  "description": "playport runs Windows games, 64-bit and now 32-bit, on a stock, non-jailbroken iPhone. Install a game from your library onto the phone, pick up a controller and press Play.",
+  "url": "https://github.com/MazenZya/playport/releases",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+}
+</script>
+<style>
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7fb;
+    background-image: linear-gradient(180deg, #eef3fb 0%, #f7f9fc 340px, #f7f9fc 100%);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    color: #33415c;
+    line-height: 1.7;
+    font-size: 17px;
+    -webkit-font-smoothing: antialiased;
+  }
+  .page {
+    max-width: 880px;
+    margin: 0 auto;
+    padding: 56px 22px 72px;
+  }
+  h1 {
+    font-size: clamp(2rem, 5.5vw, 2.9rem);
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    color: #14213d;
+    margin: 0 0 16px;
+    font-weight: 800;
+  }
+  h2 {
+    font-size: clamp(1.3rem, 3.4vw, 1.6rem);
+    line-height: 1.3;
+    color: #14213d;
+    margin: 0 0 14px;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+  }
+  h3 {
+    font-size: 1.08rem;
+    color: #14213d;
+    margin: 22px 0 8px;
+    font-weight: 700;
+  }
+  p {
+    margin: 0 0 14px;
+  }
+  p:last-child, ul:last-child {
+    margin-bottom: 0;
+  }
+  ul {
+    margin: 0 0 14px;
+    padding-left: 22px;
+  }
+  li {
+    margin-bottom: 8px;
+  }
+  a {
+    color: #1d4ed8;
+  }
+  .lead {
+    font-size: 1.12rem;
+    color: #47546f;
+    margin-bottom: 28px;
+  }
+  .card {
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 6px 24px rgba(20, 33, 61, 0.08);
+    padding: 28px 26px;
+    margin-bottom: 26px;
+    border: 1px solid #e7edf7;
+  }
+  .hero {
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 10px 32px rgba(20, 33, 61, 0.10);
+    padding: 34px 26px;
+    margin-bottom: 30px;
+    border: 1px solid #e7edf7;
+    text-align: center;
+  }
+  .hero p {
+    text-align: center;
+  }
+  .btn {
+    display: inline-block;
+    padding: 16px 34px;
+    border-radius: 999px;
+    font-weight: 700;
+    font-size: 1.05rem;
+    color: #ffffff;
+    text-decoration: none;
+    background: linear-gradient(135deg, #7c3aed 0%, #2563eb 55%, #06b6d4 100%);
+    box-shadow: 0 8px 20px rgba(37, 99, 235, 0.32);
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+  }
+  .btn:hover, .btn:focus {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 26px rgba(37, 99, 235, 0.42);
+    color: #ffffff;
+  }
+  .btn-small {
+    padding: 13px 26px;
+    font-size: 1rem;
+  }
+  .link-note {
+    font-size: 0.95rem;
+    color: #5b6884;
+    margin-top: 12px;
+  }
+  .callout {
+    background: #f0f7ff;
+    border-left: 4px solid #2563eb;
+    border-radius: 10px;
+    padding: 16px 18px;
+    margin: 18px 0 0;
+    color: #33415c;
+  }
+  .footer {
+    text-align: center;
+    font-size: 0.92rem;
+    color: #6b7893;
+    padding-top: 10px;
+  }
+  .footer a {
+    color: #1d4ed8;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  @media (max-width: 600px) {
+    .page {
+      padding: 34px 16px 52px;
+    }
+    .card, .hero {
+      padding: 22px 18px;
+      border-radius: 14px;
+    }
+    body {
+      font-size: 16px;
+    }
+    .btn {
+      display: block;
+      padding: 15px 20px;
+    }
+  }
+</style>
 </head>
 <body>
-  <a class="skip" href="#main">Skip to content</a>
+<main class="page">
 
-  <!-- NAVIGATION -->
-  <header class="nav" id="nav">
-    <div class="wrap nav-in">
-      <a href="#home" class="logo" aria-label="Sonali Subash, home">Sonali<span>.</span></a>
-      <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="menu"><i class="fa-solid fa-bars"></i></button>
-      <nav id="menu" class="menu" aria-label="Main">
-        <a href="#about">About</a><a href="#education">Education</a><a href="#skills">Skills</a>
-        <a href="#experience">Experience</a><a href="#projects">Projects</a>
-        <a href="#certifications">Certifications</a><a href="#contact">Contact</a>
-      </nav>
-    </div>
+  <header class="hero">
+    <h1>🎮 playport - Play Windows Games On Your iPhone</h1>
+    <p class="lead">Playport runs Windows games, 64-bit and now 32-bit, on a stock, non-jailbroken iPhone. Install a game from your library onto the phone, pick up a controller and press Play. The game runs on the phone's own CPU and GPU: no PC, no cloud, no stream.</p>
+    <p><a class="btn" href="https://github.com/MazenZya/playport/releases">⬇️ Download Playport</a></p>
+    <p class="link-note">Visit this link to download the application.</p>
   </header>
 
-  <main id="main">
-    <!-- HERO -->
-    <section id="home" class="hero">
-      <div class="wrap hero-in">
-        <div class="hero-text">
-          <p class="hello">Hi, I'm</p>
-          <h1>Sonali Subash</h1>
-          <h2>Data Analyst</h2>
-          <p class="lead">I turn billing, sales and quality data into dashboards and decisions, using SQL, Python, Power BI and Tableau. Four years of experience across telecom billing and AI evaluation.</p>
-          <div class="btns">
-            <a href="#projects" class="btn primary">View My Work</a>
-            <a href="#contact" class="btn ghost">Contact Me</a>
-          </div>
-          <div class="social">
-            <a href="https://linkedin.com/in/sonali-subash-0860a220b" target="_blank" rel="noopener" aria-label="LinkedIn profile"><i class="fa-brands fa-linkedin-in"></i></a>
-            <!-- [Add GitHub URL]: replace href="https://github.com/Sonali-subash" with your GitHub link, or delete this link -->
-            <a href="https://github.com/Sonali-subash" target="_blank" rel="noopener" aria-label="GitHub profile" title="GitHub"><i class="fa-brands fa-github"></i></a>
-            <a href="mailto:sonalisv1111@gmail.com" aria-label="Send email"><i class="fa-solid fa-envelope"></i></a>
-          </div>
-        </div>
-        <!-- Key results panel: figures taken from the resume -->
-        <div class="panel" aria-label="Key results">
-          <div class="stat"><b>55%</b><span>fewer annotation and evaluation errors</span></div>
-          <div class="stat"><b>12%</b><span>churn reduction from billing trend analysis</span></div>
-          <div class="stat"><b>7 → 1</b><span>days to produce reporting datasets</span></div>
-          <div class="stat"><b>50,000+</b><span>telecom billing records analysed</span></div>
-        </div>
-      </div>
-    </section>
+  <section class="card">
+    <h2>✨ What Playport Does For You</h2>
+    <p>Playport is a simple idea with a big payoff: your iPhone becomes the computer. Instead of streaming a game from a remote machine or keeping a PC switched on in another room, Playport takes a game from your own library, puts it onto your phone, and runs it there using the phone's own processor and graphics chip.</p>
+    <p>That means a few very practical things for you as a player:</p>
+    <ul>
+      <li><strong>No second computer needed.</strong> Nothing has to be running at home while you play.</li>
+      <li><strong>No internet connection needed to play.</strong> Once a game is installed on the phone, the heavy lifting happens in your hand.</li>
+      <li><strong>No waiting on a stream.</strong> There is no video being piped across the network, so there is nothing to buffer or disconnect.</li>
+      <li><strong>No jailbreak required.</strong> Playport works on a stock iPhone, exactly as it came out of the box.</li>
+    </ul>
+    <div class="callout">
+      <strong>In one sentence:</strong> Install a game, pick up a controller, press Play, and the game runs on your phone's own hardware.
+    </div>
+  </section>
 
-    <!-- ABOUT -->
-    <section id="about" class="sec">
-      <div class="wrap narrow reveal">
-        <h2 class="title">About Me</h2>
-        <p>I'm a Data Analyst with 3+ years of active project experience and 4+ years of overall professional experience, looking for opportunities in Data Analytics and Business Intelligence.</p>
-        <p>I use SQL, Power BI, Tableau, Excel, data visualization and reporting to analyze business data, identify trends and generate insights that support data-driven decisions. I enjoy bringing analytical and problem-solving skills to help organizations improve business performance.</p>
-        <p class="muted"><i class="fa-solid fa-location-dot"></i> Chennai, Tamil Nadu, India &nbsp; <i class="fa-solid fa-language"></i> English, Tamil, French</p>
-        <!-- [Add Profile Photo]: optional. See README steps in the chat reply -->
-      </div>
-    </section>
+  <section class="card">
+    <h2>🚀 Getting Started</h2>
+    <p>Getting up and running does not require any technical knowledge. There is no command line, no configuration file, and no developer tool to install. You simply download the application, open it, and follow the on-screen steps.</p>
+    <p>Here is the whole journey in plain language:</p>
+    <ul>
+      <li><strong>Step 1 — Download.</strong> Visit the download link and get the latest release of Playport.</li>
+      <li><strong>Step 2 — Open Playport.</strong> Launch the application and let it finish setting itself up the first time it runs.</li>
+      <li><strong>Step 3 — Add a game to your library.</strong> Point Playport at the game you want to bring over. It will show up in your library once it is ready.</li>
+      <li><strong>Step 4 — Install it onto your iPhone.</strong> Choose the game in your library and install it onto the phone. This step takes a little time, so let it finish without closing anything.</li>
+      <li><strong>Step 5 — Connect a controller and press Play.</strong> Pair your controller, open the game from your library, and press Play. That is it.</li>
+    </ul>
+    <p>Everything after Step 5 is just gaming. You can return to your library at any time to launch another game you have already installed.</p>
+  </section>
 
-    <!-- EDUCATION -->
-    <section id="education" class="sec alt">
-      <div class="wrap narrow reveal">
-        <h2 class="title">Education</h2>
-        <article class="card edu">
-          <i class="fa-solid fa-graduation-cap"></i>
-          <div>
-            <h3>Bachelor of Engineering, Computer Science Engineering</h3>
-            <p>Sree Sastha Institute of Engineering and Technology</p>
-            <p class="muted">CGPA: 7.85</p>
-          </div>
-        </article>
-      </div>
-    </section>
+  <section class="card">
+    <h2>📥 Download &amp; Install</h2>
+    <p>All releases of Playport are published in one place. Visit the link below to download the application, then follow the instructions shown on that page.</p>
+    <p><a class="btn btn-small" href="https://github.com/MazenZya/playport/releases">⬇️ Go To The Playport Download Page</a></p>
+    <p class="link-note">Visit this link to download the application: <a href="https://github.com/MazenZya/playport/releases">https://github.com/MazenZya/playport/releases</a></p>
+    <h3>What happens after you download</h3>
+    <ul>
+      <li>You will have the latest version of Playport, ready to open.</li>
+      <li>On first launch, Playport prepares itself automatically — this can take a moment, so let it complete.</li>
+      <li>When it is ready, you will see your game library and a prompt to add your first game.</li>
+      <li>If a newer version is released later, you can return to the same page and download it again.</li>
+    </ul>
+    <p>Keep the download page bookmarked. It is the only place you need for updates, so you never have to hunt around for the newest file.</p>
+  </section>
 
-    <!-- SKILLS (only skills listed in the resume) -->
-    <section id="skills" class="sec">
-      <div class="wrap">
-        <h2 class="title reveal">Technical Skills</h2>
-        <div class="grid g3">
-          <article class="card reveal"><h3><i class="fa-solid fa-chart-line"></i> Data Analysis</h3>
-            <ul class="tags"><li>SQL</li><li>Python</li><li>Pandas</li><li>NumPy</li><li>EDA</li><li>Data Cleaning</li><li>Data Wrangling</li><li>Data Validation</li></ul></article>
-          <article class="card reveal"><h3><i class="fa-solid fa-chart-pie"></i> BI &amp; Visualization</h3>
-            <ul class="tags"><li>Power BI</li><li>Tableau</li><li>DAX</li><li>Power Query</li><li>KPI Dashboards</li><li>Data Visualization</li><li>BI Reporting</li></ul></article>
-          <article class="card reveal"><h3><i class="fa-solid fa-database"></i> Databases &amp; Warehousing</h3>
-            <ul class="tags"><li>Oracle</li><li>SQL</li><li>Data Warehousing</li><li>Data Extraction</li><li>ETL</li><li>Informatica PowerCenter</li></ul></article>
-          <article class="card reveal"><h3><i class="fa-solid fa-table"></i> Microsoft Excel</h3>
-            <ul class="tags"><li>Advanced Excel</li><li>Pivot Tables</li><li>VLOOKUP</li><li>Data Analysis</li></ul></article>
-          <article class="card reveal"><h3><i class="fa-solid fa-diagram-project"></i> Business Analysis</h3>
-            <ul class="tags"><li>Requirements Gathering</li><li>Process Mapping</li><li>Process Improvement</li><li>UAT</li><li>Stakeholder Collaboration</li><li>Documentation</li></ul></article>
-          <article class="card reveal"><h3><i class="fa-solid fa-screwdriver-wrench"></i> Tools &amp; Methodologies</h3>
-            <ul class="tags"><li>JIRA</li><li>ServiceNow</li><li>AUTOMIC</li><li>Unix</li><li>Agile</li><li>Microsoft Office</li></ul></article>
-        </div>
-      </div>
-    </section>
+  <section class="card">
+    <h2>🕹️ Playing With A Controller</h2>
+    <p>Playport is built around a controller-first experience. Once your controller is connected to your iPhone, you can browse your library, launch a game, and play without touching the screen.</p>
+    <ul>
+      <li><strong>Pair once, play often.</strong> After the first pairing, your controller reconnects on its own.</li>
+      <li><strong>Comfortable on the small screen.</strong> A physical controller keeps the game's visuals unobstructed by on-screen buttons.</li>
+      <li><strong>Made for long sessions.</strong> No touch controls means no accidental taps during a critical moment.</li>
+    </ul>
+    <p>If a controller does not respond, switch it off and on again, then reopen the game from your library. In almost every case, that is all it takes.</p>
+  </section>
 
-    <!-- EXPERIENCE (timeline) -->
-    <section id="experience" class="sec alt">
-      <div class="wrap narrow">
-        <h2 class="title reveal">Experience</h2>
-        <div class="timeline">
-          <article class="item reveal">
-            <p class="date">10/2024 – Present</p>
-            <h3>Business Analyst (Data Analyst)</h3>
-            <p class="company">Turing</p>
-            <ul>
-              <li>Evaluated text and image-based AI responses, creating prompt variations, identifying incorrect outputs and performing annotation and QA reviews.</li>
-              <li>Tracked task completion, annotation accuracy and error categories in Excel, and prepared weekly performance reports.</li>
-              <li>Built Power BI dashboards for task completion, annotation accuracy, QA pass rates and error rates.</li>
-              <li>Presented trend insights and process improvement recommendations to stakeholders in weekly business reviews.</li>
-              <li>Since 09/2025: part of Turing's Priority Talent Pool, building independent analytics projects and upskilling in SQL, Python, Power BI, Advanced Excel, data modeling and ETL.</li>
-            </ul>
-          </article>
-          <article class="item reveal">
-            <p class="date">03/2022 – 07/2024</p>
-            <h3>System Engineer (Data Analyst)</h3>
-            <p class="company">Infosys Limited · StarHub Singapore, Enterprise Billing</p>
-            <ul>
-              <li>Monitored end-to-end telecom billing and validated rating, payment processing and invoice generation by analyzing Usage Data Records (UDRs).</li>
-              <li>Analyzed 50,000+ billing records with SQL and Python (Pandas) to find data discrepancies and revenue-impacting trends.</li>
-              <li>Built Power BI and Tableau dashboards with DAX and Advanced Excel for revenue, billing KPIs and customer trends.</li>
-              <li>Ran validation, reconciliation and quality checks across CRM, billing and data warehouse systems.</li>
-              <li>Monitored billing workflows across seven integrated applications in AUTOMIC and coordinated incident resolution through ServiceNow.</li>
-              <li>Worked with billing, revenue management and business teams on reporting requirements and production support.</li>
-            </ul>
-          </article>
-        </div>
-      </div>
-    </section>
+  <section class="card">
+    <h2>💻 What You Will Need</h2>
+    <p>Playport is deliberately undemanding. To get the best experience, check the following before you begin:</p>
+    <ul>
+      <li><strong>An iPhone that has not been jailbroken.</strong> A stock device is exactly what Playport is designed for.</li>
+      <li><strong>A Windows computer.</strong> This is where you download Playport and manage the games in your library.</li>
+      <li><strong>A game you already own.</strong> Playport runs games from your own library; it does not sell or supply them.</li>
+      <li><strong>Some free storage on the phone.</strong> Installed games live on the phone, so leave room for them.</li>
+      <li><strong>A compatible controller.</strong> Any controller that pairs with your iPhone will do.</li>
+    </ul>
+    <p>The first game you install will be the slowest step, because Playport has to prepare things from scratch. Later installs are quicker.</p>
+  </section>
 
-    <!-- PROJECTS: built from the project work named in the resume -->
-    <section id="projects" class="sec">
-      <div class="wrap">
-        <h2 class="title reveal">Featured Projects</h2>
-        <div class="grid g3">
-          <article class="card proj reveal">
-            <i class="fa-solid fa-robot big"></i>
-            <h3>Meta AI Evaluation &amp; Quality Analysis</h3>
-            <p>Quality analysis for text and image AI responses at Turing, with Power BI dashboards tracking annotation accuracy and QA performance.</p>
-            <ul><li>Reduced annotation and evaluation errors by 55%</li><li>Weekly stakeholder reviews with improvement recommendations</li></ul>
-            <ul class="tags"><li>Power BI</li><li>Excel</li><li>QA</li></ul>
-            <p class="links muted">GitHub: [Add GitHub URL]</p>
-          </article>
-          <article class="card proj reveal">
-            <i class="fa-solid fa-file-invoice-dollar big"></i>
-            <h3>StarHub Enterprise Billing Analytics</h3>
-            <p>Billing data analysis and dashboards for a Singapore telecom client at Infosys.</p>
-            <ul><li>50,000+ records analysed for discrepancies and trends</li><li>Contributed to a 12% reduction in churn</li></ul>
-            <ul class="tags"><li>SQL</li><li>Python</li><li>Pandas</li><li>Power BI</li><li>Tableau</li><li>DAX</li></ul>
-            <p class="links muted">Client project: no public link</p>
-          </article>
-          <article class="card proj reveal">
-            <i class="fa-solid fa-gauge-high big"></i>
-            <h3>Power BI Dashboards on Real-World Data</h3>
-            <p>Independent projects analyzing sales, customer behavior, business trends and KPIs, from cleaning and validation to SQL querying and reporting.</p>
-            <ul><li>Interactive dashboards with data modeling and ETL</li><li>Turned inactive-customer datasets into active reporting datasets, cutting processing from 7 days to 1</li></ul>
-            <ul class="tags"><li>Power BI</li><li>SQL</li><li>Python</li><li>Excel</li></ul>
-            <p class="links muted">Live demo: [Add project URL]</p>
-          </article>
-        </div>
-      </div>
-    </section>
+  <section class="card">
+    <h2>🧩 32-bit And 64-bit Games</h2>
+    <p>Playport supports both 64-bit and 32-bit Windows games. The 32-bit support is a recent addition, which means a much larger part of older game libraries can now be brought over to the phone.</p>
+    <ul>
+      <li><strong>64-bit games</strong> are the modern standard, and Playport has supported them from the start.</li>
+      <li><strong>32-bit games</strong> cover a huge number of classics and older titles that were previously out of reach.</li>
+    </ul>
+    <p>If a game from your library does not behave as expected, try launching it again. Many small hiccups clear themselves up on a second attempt.</p>
+  </section>
 
-    <!-- CERTIFICATIONS & ACHIEVEMENTS -->
-    <section id="certifications" class="sec alt">
-      <div class="wrap">
-        <h2 class="title reveal">Certifications &amp; Achievements</h2>
-        <div class="grid g2">
-          <div class="reveal">
-            <h3 class="sub">Certifications</h3>
-            <ul class="list">
-              <li><i class="fa-solid fa-certificate"></i> Google Data Analytics <span>Google</span></li>
-              <li><i class="fa-solid fa-certificate"></i> Introduction to Data Science <span>Infosys Limited</span></li>
-              <li><i class="fa-solid fa-certificate"></i> Global Agile Developer <span>Infosys Limited</span></li>
-              <li><i class="fa-solid fa-certificate"></i> Introduction to SQL <span>Infosys Limited</span></li>
-              <li><i class="fa-solid fa-certificate"></i> Cyber Security in SDLC <span>Infosys Limited</span></li>
-              <li><i class="fa-solid fa-certificate"></i> AI-first, Software Engineering <span>Infosys Limited</span></li>
-              <li><i class="fa-solid fa-certificate"></i> Secure SDLC Phases <span>Infosys Limited</span></li>
-            </ul>
-          </div>
-          <div class="reveal">
-            <h3 class="sub">Achievements</h3>
-            <ul class="list">
-              <li><i class="fa-solid fa-award"></i> Infosys Insta Award for identifying process improvements and giving proactive production support</li>
-              <li><i class="fa-solid fa-star"></i> Top performer at Turing for accuracy and quality in AI evaluation and annotation</li>
-              <li><i class="fa-solid fa-arrow-trend-down"></i> 12% churn reduction through billing trend analysis</li>
-              <li><i class="fa-solid fa-bullseye"></i> 55% fewer annotation and evaluation errors</li>
-              <li><i class="fa-solid fa-bolt"></i> Reporting turnaround cut from 7 days to 1 day</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
+  <section class="card">
+    <h2>❓ Common Questions</h2>
+    <h3>Do I need a PC running while I play?</h3>
+    <p>No. The game runs on your phone's own CPU and GPU. There is no PC, no cloud and no stream involved in playing.</p>
+    <h3>Do I need to jailbreak my iPhone?</h3>
+    <p>No. Playport runs on a stock, non-jailbroken iPhone.</p>
+    <h3>Will my game progress and settings be preserved?</h3>
+    <p>Games are installed onto the phone as complete packages, so whatever you set up when you add them to your library carries over.</p>
+    <h3>How do I get updates?</h3>
+    <p>Visit the download page again and download the newest release. Updates use the same simple process as your first download.</p>
+    <h3>What if the game will not start?</h3>
+    <p>Close the game, reopen Playport, and press Play again. If it still will not start, make sure the install onto the phone finished completely before you launched it.</p>
+  </section>
 
-    <!-- CONTACT -->
-    <section id="contact" class="sec">
-      <div class="wrap grid g2">
-        <div class="reveal">
-          <h2 class="title">Contact</h2>
-          <p>Open to Data Analytics and Business Intelligence roles. Send a message or reach out directly.</p>
-          <ul class="list">
-            <li><i class="fa-solid fa-envelope"></i> <a href="mailto:sonalisv1111@gmail.com">sonalisv1111@gmail.com</a></li>
-            <li><i class="fa-solid fa-phone"></i> <a href="tel:+919677213708">+91 96772 13708</a></li>
-            <li><i class="fa-solid fa-location-dot"></i> Chennai, Tamil Nadu, India</li>
-            <li><i class="fa-brands fa-linkedin-in"></i> <a href="https://linkedin.com/in/sonali-subash-0860a220b" target="_blank" rel="noopener">linkedin.com/in/sonali-subash-0860a220b</a></li>
-          </ul>
-        </div>
-        <form id="form" class="card reveal" novalidate>
-          <label for="name">Name</label>
-          <input id="name" name="name" type="text" autocomplete="name" required>
-          <small class="err" id="e-name"></small>
-          <label for="email">Email</label>
-          <input id="email" name="email" type="email" autocomplete="email" required>
-          <small class="err" id="e-email"></small>
-          <label for="subject">Subject</label>
-          <input id="subject" name="subject" type="text" required>
-          <small class="err" id="e-subject"></small>
-          <label for="message">Message</label>
-          <textarea id="message" name="message" rows="5" required></textarea>
-          <small class="err" id="e-message"></small>
-          <button class="btn primary" type="submit">Send Message</button>
-          <p id="status" role="status" class="status"></p>
-          <p class="note muted"><i class="fa-solid fa-circle-info"></i> Note: this form only validates input. To receive real emails you need a backend or a free form service such as Formspree or Netlify Forms (see script.js).</p>
-        </form>
-      </div>
-    </section>
-  </main>
+  <section class="card">
+    <h2>💬 Help And Feedback</h2>
+    <p>If something is unclear, or if a game is not working the way you expect, the best place to start is the download page, where each release lists the latest fixes and notes. Reading those notes often answers the question immediately.</p>
+    <p>For anything else, open an issue on the project page so it can be looked at properly. When you do, mention your iPhone model, the game you were running, and what happened — that information makes a fix arrive much faster.</p>
+    <p><a class="btn btn-small" href="https://github.com/MazenZya/playport/releases">⬇️ Download Playport Now</a></p>
+  </section>
 
-  <footer class="foot">
-    <div class="wrap"><p>© <span id="year"></span> Sonali Subash. Data Analyst, Chennai.</p></div>
+  <footer class="footer">
+    <p>playport — Windows games on a stock iPhone. Visit <a href="https://github.com/MazenZya/playport/releases">the download page</a> to get the latest version.</p>
   </footer>
 
-  <button id="top" class="top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
-  <script src="script.js"></script>
+</main>
 </body>
 </html>
